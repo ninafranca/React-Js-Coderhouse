@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/Header/NavBar';
-
+import ItemListContainer from './components/Body/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-          <NavBar />
-      </header>
+      <NavBar />
+      <ItemListContainer 
+        greeting={"Bienvenid@!"}
+      />
     </div>
   );
 }
