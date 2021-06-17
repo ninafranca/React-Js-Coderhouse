@@ -5,14 +5,15 @@ class ItemCount extends Component  {
     constructor () {
         super();
         this.state = {
-            counter: 1
+            counter: 1,
+            stock: 10
         }
     }
 
     handlerPlus = () => {
-        if(this.state.counter === 5) {
+        if(this.state.counter === this.state.stock) {
             this.setState({
-                counter: 5
+                counter: this.state.stock
             });
         } else {
             this.setState({counter: this.state.counter + 1})
@@ -39,8 +40,6 @@ class ItemCount extends Component  {
         return (
             <div className="card card-main">
                 <div className="card-body">
-                    <h5 className="card-title">Botas</h5>
-                    <p className="card-text">Botas altas negras</p>
                     <div className="card card-content">
                         <p onClick={this.handlerMinus} className="plus-minus">-</p>
                         <p id="counter-value">{this.state.counter}</p>
