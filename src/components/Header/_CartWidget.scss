@@ -1,0 +1,16 @@
+.cart-img {
+    display: flex;
+    align-items: flex-end;
+    img {
+        height: 10vh;
+        z-index: 1;
+        position: relative;
+    }
+    p {
+        z-index: 2;
+        right: 12%;
+        font-size: 80%;
+        font-weight: 500;
+        position: absolute;
+    }
+}

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './ItemCount.css';
+import './_ItemCount.scss';
 
 class ItemCount extends Component  {
     constructor () {

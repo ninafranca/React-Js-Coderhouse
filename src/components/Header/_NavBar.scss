@@ -1,0 +1,20 @@
+.App-header {
+    background-color: rgb(213, 63, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: calc(10px + 2vmin);
+    height: 12vh;
+    nav>a {
+        padding: 0rem 1rem;
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: rgb(233, 233, 233);
+        }
+    }
+    .img-logo {
+        height: 12vh;
+    }
+}
+  

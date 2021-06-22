@@ -1,26 +1,21 @@
-import React, {Component, Fragment} from 'react';
-import CartWidget from './CartWidget'
+import React from 'react';
+import CartWidget from './CartWidget';
+import './_NavBar.scss';
+import Logo from './logo.png';
+import {Link} from 'react-router-dom';
 
-const headerStyles = {
-    height: "10vh"
-}
-
-class NavBar extends Component {
-    render() {
+function NavBar () {
         return (
-            <Fragment>
-                <div className="App-header"  style={headerStyles}>
-                    <h1>Nanette Shoes</h1>
-                    <nav>
-                        <a href="./">Inicio</a>
-                        <a href="./">Productos</a>
-                        <a href="./">Contacto</a>
-                    </nav>
-                    <CartWidget />
-                </div>
-            </Fragment>
+            <div className="App-header">
+                <Link to="/"><img src={Logo} alt="Logo Nanette Shoes" className="img-logo"></img></Link>
+                <nav>
+                    <Link to="/">Inicio</Link>
+                    <Link to="/products">Productos</Link>
+                    <Link to="/contact">Contacto</Link>
+                </nav>
+                <CartWidget />
+            </div>
         );
-    }
 }
 
 export default NavBar;

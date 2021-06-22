@@ -1,14 +1,13 @@
 import React from 'react';
 import Bag from './bag.png';
+import './_CartWidget.scss'
 
-const bag = {
-    width: "5rem"
-}
 
 function CartWidget () {
     return (
         <div className="cart-img">
-           <img src={Bag} alt="Cart Logo" style={bag}></img>          
+           <img src={Bag} alt="Cart Logo"></img>
+           <p>0</p>
         </div>
     )
 }

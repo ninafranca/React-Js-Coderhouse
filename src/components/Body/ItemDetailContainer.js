@@ -1,40 +1,13 @@
-import React, {useEffect, useState} from 'react'
-import Item from './Item';
-import ItemCount from './ItemCount';
-import ItemDetailContainer from './ItemDetailContainer';
-import './_ItemList.scss';
+import React, {useEffect, useState} from 'react';
+import './_ItemDetailContainer.scss';
+import ItemDetail from '../../Views/ItemDetail';
+import {useParams} from 'react-router-dom';
 
-function ItemList() {
-
-    const [products, setProducts] = useState([])
-   
-    useEffect(() => {
-        setTimeout(() => {
-          fetch('https://fakestoreapi.com/products')
-        .then(res => res.json())
-        .then( res => setProducts(res));
-        }, 2000);
-       
-    }, [])
-
-
-    return (
-        <div className="item-list">
-        {products.map(p => 
-            <div className="card" style={{ margin: 10}} key={p.id}>
-                <Item 
-                    prop={p} key={p.id}
-                />
-                <ItemCount />
-            </div>
-        )}
-    </div>
-
-    /*
-    const [productos, setProductos] = useState([])
+function ItemDetailContainer() {
+    /*const [product, setProduct] = useState([])
 
     useEffect( () => {
-        const promesa = new Promise( (resolve) => {
+        const getItems = new Promise( (resolve) => {
             setTimeout ( () => {
                 resolve([
                     {id: 1, producto: "Botas Arya", tipo: "botas", color: "negro", precio: 5600, archivo: "https://res.cloudinary.com/nanette/image/upload/v1624243527/nanette-shoes/bootsblack_zedn4k.webp", imagen: "bootsblack"},
@@ -55,29 +28,28 @@ function ItemList() {
                 ])
             }, 2000)
         })
-        promesa.then( (resultado) => {
-            setProductos(resultado)
+        getItems.then( (resultado) => {
+            setProduct(resultado)
         })
-    }, [])
+    }, [])*/
+    const [item, setItem] = useState({});
+    const {id} = useParams();
+
+    useEffect( () => {
+        setTimeout( () => {
+            fetch(`https://fakestoreapi.com/products/${id}`)
+            .then (res => res.json())
+            .then (res => setItem(res))
+        }, 2000);
+    }, [id])
 
     return (
-        <div className="item-list">
-            {productos.map(p => 
-                <div className="card" style={{ margin: 10}} key={p.id}>
-                    <Item 
-                        id={p.id} 
-                        nombre={p.producto} 
-                        precio={p.precio}
-                        archivo={p.archivo}
-                    />
-                    <ItemDetailContainer />
-                    <ItemCount />
-                </div>
-            )}
+        <div className="item-detail-container">
+            <div className="card" key={item.id}>
+                <ItemDetail  prop={item}/>
+            </div>
         </div>
     )
 }
-*/
-    )}
 
-export default ItemList;
+export default ItemDetailContainer;
