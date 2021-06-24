@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    padding-bottom: 0.5rem !important;
+    background-color: rgb(213, 63, 250);
+    p {
+        margin-top: 1rem;
+        align-self: center;
+        color: black;
+        font-size: 1.1rem;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
+    }
+}

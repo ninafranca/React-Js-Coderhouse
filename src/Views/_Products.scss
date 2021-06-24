@@ -1,0 +1,65 @@
+.aside-productos {
+    display: flex;
+    padding-bottom: 3rem;
+    aside {
+        padding-left: 2%;
+        h3 {
+            padding-bottom: 0.8rem;
+            font-family: 'Staatliches', cursive;
+            font-size: 1.4rem;
+            text-shadow: rgb(213, 63, 250) 0.1em 0.1em 0.3em;
+        }
+        label {
+            line-height: 2.5rem;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.2rem;
+            @media screen and (min-width: 1400px) {
+                font-size: 1.5rem;
+            }
+        }
+        div {
+            padding-bottom: 0.6rem;
+        }
+        .filtro-negro {
+            background-color: black;
+            @include filtros;
+        }
+        .filtro-beige {
+            background-color: rgb(192, 160, 118);
+            color: rgb(192, 160, 118);
+            @include filtros;
+        }
+        .filtro-rosa {
+            background-color: rgb(211, 142, 197);
+            color:rgb(211, 142, 197);
+            @include filtros;
+        }
+        .filtro-verde {
+            background-color: rgb(50, 72, 39);
+            color: rgb(50, 72, 39);
+            @include filtros;
+        }
+        .filtro-rojo {
+            background-color: red;
+            color: red;
+            @include filtros
+        }
+    }
+    .productos {
+        padding: 0% 7%;
+    }
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card {
+        margin: 2% 0%;
+        a {
+            font-size: 120%;
+        }
+    }
+
+}

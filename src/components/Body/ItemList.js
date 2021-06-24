@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Item from './Item';
 import ItemCount from './ItemCount';
-import ItemDetailContainer from './ItemDetailContainer';
 import './_ItemList.scss';
 
 function ItemList() {
