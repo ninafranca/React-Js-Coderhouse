@@ -1,3 +1,21 @@
+# Nanette Shoes
+
+_Proyecto del curso de React Js de Coderhouse_
+
+## Construido con 🛠️
+
+* HTML5
+* CSS3
+* [JavaScript](https://www.javascript.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Sass](https://sass-lang.com/)
+* [React JS](https://es.reactjs.org/)
+* [Git](https://git-scm.com/)
+
+## Autora ✒️
+
+* **Nina Spinelli**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
