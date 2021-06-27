@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './_ItemDetailContainer.scss';
-import Categories from '../../Views/Categories';
+import Categories from '../../Views/CategoryElectronics';
 import {useParams} from 'react-router-dom';
 import ItemCount from './ItemCount';
 
