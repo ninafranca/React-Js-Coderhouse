@@ -15,7 +15,6 @@ function ItemList() {
        
     }, [])
 
-
     return (
         <div className="item-list">
         {products.map(p => 

@@ -8,9 +8,11 @@ import Details from './components/Body/ItemDetailContainer';
 import Contact from './Views/Contact';
 import Footer from './components/Footer/Footer';
 import Category from './components/Body/CategoryList';
+import {CartProvider} from './components/Context/CartContext';
 
 function App() {
   return (
+    <CartProvider>
     <Router>
       <div className="App">
         <NavBar/>
@@ -24,6 +26,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </CartProvider>
   );
 }
 
