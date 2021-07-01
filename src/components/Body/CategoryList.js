@@ -6,13 +6,13 @@ function Categories({match}) {
     const [productos, setProductos] = useState([]);
 
     useEffect(()=>{
-        fetch(`https://fakestoreapi.com/products/category/${match.params.category}`)
+        fetch(`https://fakestoreapi.com/products/category/${match.params.id}`)
         .then((res)=> res.json())
         .then((productos)=> setProductos(productos))
 
-    }, [match.params.category]);
+    }, [match.params.id]);
 
-    const paramTitle = match.params.category.toUpperCase();
+    const paramTitle = match.params.id.toUpperCase();
 
     return (
         <div className="category-list">
