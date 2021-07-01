@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import Item from './Item';
-import ItemCount from './ItemCount';
 import './_ItemList.scss';
 
 function ItemList() {
@@ -22,9 +21,12 @@ function ItemList() {
         {products.map(p => 
             <div className="card" style={{ margin: 10}} key={p.id}>
                 <Item 
-                    prop={p} key={p.id}
+                    key={p.id}
+                    image={p.image} 
+                    title={p.title}
+                    id={p.id}
+                    price={p.price}
                 />
-                <ItemCount />
             </div>
         )}
     </div>

@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react';
 import CartWidget from './CartWidget';
 import './_NavBar.scss';
 import Logo from './logo.png';
-import {Link, useParams} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function NavBar () {
         return (
@@ -11,15 +10,15 @@ function NavBar () {
                     <Link to="/"><img src={Logo} alt="Logo Nanette Shoes" className="img-logo"></img></Link>
                     <nav>
                         <div>
-                        <Link to="/">Inicio</Link>
-                        <Link to="/products">Productos</Link>
+                        <Link to="/home">Inicio</Link>
+                        <Link to="/">Productos</Link>
                         <Link to="/contact">Contacto</Link>
                         </div>
                         <div>
-                            <Link to="/categories/electronics">Electrónica</Link>
-                            <Link to="/categories/jewelery">Joyas</Link>
-                            <Link to="/categories/women">Mujer</Link>
-                            <Link to="/categories/men">Hombre</Link>
+                            <Link to="/category/electronics">Electrónica</Link>
+                            <Link to="/category/jewelery">Joyas</Link>
+                            <Link to="/category/women">Mujer</Link>
+                            <Link to="/category/men">Hombre</Link>
                         </div>
                     </nav>
                     <CartWidget />

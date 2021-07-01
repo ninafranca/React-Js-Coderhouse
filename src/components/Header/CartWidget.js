@@ -15,7 +15,14 @@ function CartWidget () {
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    ...
+                {/*{quantity === 0 ? 
+                    <ItemCount stock={prop.stock} name={prop.title} onAdd={onAdd}/>
+                :   <div>
+                    <p><b>Compraste {quantity} {prop.title}</b></p>
+                    <Link to={'/cart'} ><button className="btn btn-secondary">Terminar compra</button></Link>
+                    </div>      
+                    
+                }*/}
                 </div>
             </div>
         </div>
