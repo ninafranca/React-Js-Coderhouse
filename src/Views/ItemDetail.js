@@ -1,8 +1,12 @@
 import React, {useState, useContext} from 'react';
-import ItemCount from '../components/Body/ItemCount';
-import './_ItemDetails.scss';
+// REACT ROUTER DOM
 import {Link} from 'react-router-dom';
+// CONTEXT
 import {CartContext} from '../components/Context/CartContext';
+// JS
+import ItemCount from '../components/Body/ItemCount';
+// SCSS
+import './_ItemDetails.scss';
 
 function ItemDetail({prop}) {
     const [quantity, setQuantity] = useState(0);
@@ -21,8 +25,8 @@ function ItemDetail({prop}) {
                 <p className="prop-p-description">{prop.description}</p>
                 {quantity === 0 ? 
                     <ItemCount stock={prop.stock} name={prop.title} onAdd={onAdd}/>
-                :   <div>
-                    <p><b>Compraste {quantity} {prop.title}</b></p>
+                :   <div className="terminar-compra">
+                        <p><b>Compraste {quantity} {prop.title}</b></p>
                     <Link to={'/cart'} ><button className="btn btn-secondary">Terminar compra</button></Link>
                     </div>      
                     

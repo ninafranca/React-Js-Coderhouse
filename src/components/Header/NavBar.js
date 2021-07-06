@@ -10,8 +10,8 @@ function NavBar () {
                     <Link to="/"><img src={Logo} alt="Logo Nanette Shoes" className="img-logo"></img></Link>
                     <nav>
                         <div>
-                        <Link to="/home">Inicio</Link>
-                        <Link to="/">Productos</Link>
+                        <Link to="/">Inicio</Link>
+                        <Link to="/products">Productos</Link>
                         <Link to="/contact">Contacto</Link>
                         </div>
                         <div>
