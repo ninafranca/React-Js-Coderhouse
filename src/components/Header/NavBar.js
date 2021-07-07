@@ -24,10 +24,10 @@ function NavBar () {
                     <CartWidget />
                 </div>
                 <div className="nanette-shoes">
-                    <h1>NANETTE SHOES</h1>
+                    <h1>NANETTE SHOP</h1>
                 </div>
                 <section class="background-attachment">
-                    <p>Vestí tus pies con estilo</p>
+                    <p>Cuidamos el medio ambiente</p>
                 </section>
                 <div class="solid-black"></div>
             </div>

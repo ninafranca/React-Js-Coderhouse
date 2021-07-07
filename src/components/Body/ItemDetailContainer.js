@@ -1,19 +1,27 @@
 import React, {useEffect, useState} from 'react';
-import './_ItemDetailContainer.scss';
+// FIREBASE
+import {db} from '../../Firebase';
+// JS
 import ItemDetail from '../../Views/ItemDetail';
-import {useParams} from 'react-router-dom';
+// SCSS
+import './_ItemDetailContainer.scss';
 
-function ItemDetailContainer() {
+function ItemDetailContainer({match}) {
     const [item, setItem] = useState({});
-    const {id} = useParams();
+    let itemId = parseInt(match.params.id);
 
-    useEffect( () => {
-        setTimeout( () => {
-            fetch(`https://fakestoreapi.com/products/${id}`)
-            .then (res => res.json())
-            .then (res => setItem(res))
-        }, 2000);
-    }, [id])
+    const getItems = () => {
+		db.collection('products').onSnapshot((querySnapshot) => {
+			const docs = [];
+			querySnapshot.forEach((doc) => {
+				docs.push({ ...doc.data(), id: doc.id });
+			});
+			setItem(docs);
+		});
+	};
+	useEffect(() => {
+		getItems();
+	}, []);
 
     return (
         <div className="item-detail-container">

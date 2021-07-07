@@ -25,23 +25,23 @@
             @include filtros;
         }
         .filtro-beige {
-            background-color: rgb(192, 160, 118);
-            color: rgb(192, 160, 118);
+            background-color: rgb(243, 214, 47);
+            color: rgb(243, 214, 47);
             @include filtros;
         }
         .filtro-rosa {
-            background-color: rgb(211, 142, 197);
-            color:rgb(211, 142, 197);
+            background: linear-gradient(90deg, rgba(30,13,218,1) 0%, rgba(78,200,64,1) 20%, rgba(155,83,176,1) 43%, rgba(183,160,43,1) 63%, rgba(223,12,144,1) 79%, rgba(0,255,158,1) 100%);
+            color:#df0c90;
             @include filtros;
         }
         .filtro-verde {
-            background-color: rgb(50, 72, 39);
-            color: rgb(50, 72, 39);
+            background-color: rgb(212, 99, 65);
+            color: rgb(212, 99, 65);
             @include filtros;
         }
         .filtro-rojo {
-            background-color: red;
-            color: red;
+            background: linear-gradient(90deg, rgba(13,176,218,1) 12%, rgba(183,43,158,1) 43%, rgba(223,12,144,1) 66%, rgba(0,255,158,1) 100%);
+            color:#df0c90;
             @include filtros
         }
     }

@@ -14,23 +14,15 @@ function Products() {
                     </div>
                     <div className="form-check">
                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="botas"></input>
-                        <label className="form-check-label" for="flexRadioDefault1">Botas</label>
+                        <label className="form-check-label" for="flexRadioDefault1">Sorbetes</label>
                     </div>
                     <div className="form-check">
                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="zapatos"></input>
-                        <label className="form-check-label" for="flexRadioDefault1">Zapatos</label>
+                        <label className="form-check-label" for="flexRadioDefault1">Vajilla</label>
                     </div>
                     <div className="form-check">
                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="sandalias"></input>
-                        <label className="form-check-label" for="flexRadioDefault1">Sandalias</label>
-                    </div>
-                    <div className="form-check">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="mocasines"></input>
-                        <label className="form-check-label" for="flexRadioDefault1">Mocasines</label>
-                    </div>
-                    <div className="form-check">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="borcegos"></input>
-                        <label className="form-check-label" for="flexRadioDefault1">Borcegos</label>
+                        <label className="form-check-label" for="flexRadioDefault1">Accesorios</label>
                     </div>
                     <div className="form-check">
                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="negro"></input>
