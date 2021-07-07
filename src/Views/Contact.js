@@ -7,9 +7,9 @@ function Contact() {
             <div>
                 <h2 className="titulo">Contacto</h2>
             </div>
-            <div className="contact-form">
+            <div className="form-cart">
                 <section id="form">
-                    <form>
+                    <form className="contact-form">
                         <div className="section-contacto__form--nombre">
                             <label for="nombre">Nombre</label>
                             <input type="text" name="nombre" id="nombre" className="shadow p-3 mb-2 bg-body rounded"></input>

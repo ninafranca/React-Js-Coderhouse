@@ -1,18 +1,24 @@
-.cart-img {
-    display: flex;
-    align-items: flex-end;
-    cursor: pointer;
-    img {
-        height: 10vh;
-        z-index: 1;
-        position: relative;
+a {
+    color: black;
+    &:hover {
+        color: black;
     }
-    p {
-        z-index: 2;
-        right: 10.9%;
-        bottom: 91.5%;
-        font-size: 80%;
-        font-weight: 500;
-        position: absolute;
+    .cart-img {
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+        img {
+            height: 10vh;
+            z-index: 1;
+            position: relative;
+        }
+        p {
+            z-index: 2;
+            right: 10.9%;
+            bottom: 91.5%;
+            font-size: 80%;
+            font-weight: 500;
+            position: absolute;
+        }
     }
 }

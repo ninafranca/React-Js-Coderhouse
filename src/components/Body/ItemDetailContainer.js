@@ -4,7 +4,6 @@ import ItemDetail from '../../Views/ItemDetail';
 import {useParams} from 'react-router-dom';
 
 function ItemDetailContainer() {
-    
     const [item, setItem] = useState({});
     const {id} = useParams();
 

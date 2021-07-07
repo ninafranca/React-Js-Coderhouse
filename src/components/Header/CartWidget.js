@@ -1,30 +1,28 @@
-import React from 'react';
+import React, {useContext} from 'react';
+// REACT ROUTER DOM
+import {Link} from 'react-router-dom';
+// CONTEXT
+import {CartContext} from '../Context/CartContext';
+// IMG
 import Bag from './bag.png';
-import './_CartWidget.scss'
-
+// SCSS
+import './_CartWidget.scss';
 
 function CartWidget () {
-    return (
-        <div className="cart-img" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-           <img src={Bag} alt="Cart Logo"></img>
-           <p>0</p>
+    const {cart, totalQuantity} = useContext(CartContext);
 
-           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Tu carrito</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    return (
+        <div>
+            { cart.length === 0 ? 
+            <div></div>
+            :
+            <Link to='/cart'>
+                <div className="cart-img">
+                    <img src={Bag} alt="Cart Logo"></img>
+                    <p>{totalQuantity}</p>
                 </div>
-                <div class="offcanvas-body">
-                {/*{quantity === 0 ? 
-                    <ItemCount stock={prop.stock} name={prop.title} onAdd={onAdd}/>
-                :   <div>
-                    <p><b>Compraste {quantity} {prop.title}</b></p>
-                    <Link to={'/cart'} ><button className="btn btn-secondary">Terminar compra</button></Link>
-                    </div>      
-                    
-                }*/}
-                </div>
-            </div>
+            </Link>
+        }
         </div>
     )
 }

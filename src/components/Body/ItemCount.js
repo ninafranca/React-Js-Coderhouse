@@ -4,6 +4,7 @@ import './_ItemCount.scss';
 const ItemCount = ({stock, onAdd}) => {
     const [quantity, setQuantity] = useState(1);
     stock = 5;
+    
     const handlerPlus = () => {
       setQuantity((quantity === stock) ? stock : quantity + 1 )
     };
