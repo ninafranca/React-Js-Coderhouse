@@ -15,10 +15,9 @@ function NavBar () {
                         <Link to="/contact">Contacto</Link>
                         </div>
                         <div>
-                            <Link to="/category/electronics">Electrónica</Link>
-                            <Link to="/category/jewelery">Joyas</Link>
-                            <Link to="/category/women">Mujer</Link>
-                            <Link to="/category/men">Hombre</Link>
+                            <Link to="/category/sorbetes">Sorbetes</Link>
+                            <Link to="/category/vajilla">Vajilla</Link>
+                            <Link to="/category/accesorios">Accesorios</Link>
                         </div>
                     </nav>
                     <CartWidget />
