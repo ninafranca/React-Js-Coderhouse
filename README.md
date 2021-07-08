@@ -1,4 +1,4 @@
-# Nanette Shoes
+# NANETTE SHOP
 
 _Proyecto del curso de React Js de Coderhouse_
 
