@@ -19,20 +19,20 @@ export const CartProvider = (props) => {
     }
 
     const inCart = (id) => {
-        if (cart.findIndex(i => i.item.id === id) >= 0) {
-        return true;
+        if (cart.filter(i => i.item.id === id) >= 0) {
+            return true;
         } else {
-        return false;
+            return false;
         }
     }
 
     const removeItem = () => {
         const remove = cart.filter(item => item.id !== Number.id);
-        setCart([...remove]);
+        setCart(remove);
     }
 
     const clear = () => {
-        setCart ([]);
+        setCart([]);
     }
 
     const totalPrice = cart.reduce(
@@ -43,7 +43,7 @@ export const CartProvider = (props) => {
         (total, current) => total + current.quantity, 0
     );
     return (
-        <CartContext.Provider value={{cart, addItem, clear, removeItem, totalPrice, totalQuantity}}>
+        <CartContext.Provider value={{cart, setCart, addItem, clear, removeItem, totalPrice, totalQuantity}}>
             {props.children}
         </CartContext.Provider>
     )

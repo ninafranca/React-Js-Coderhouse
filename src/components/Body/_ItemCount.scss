@@ -3,6 +3,7 @@
     display: flex;
     justify-self: center;
     align-items: center;
+    border-radius: none;
 }
 
 .plus-minus {
@@ -18,7 +19,6 @@
     width: 15vw;
     height: 6vh;
     border-color: rgb(145, 140, 134);
-    
     font-size: 110%;
 }
 

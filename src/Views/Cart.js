@@ -16,7 +16,7 @@ function Cart() {
             </div>
             <div>
                 <section id="form">
-                    <div className="form-cart cart">
+                    <div className="contact-form cart">
                         { cart.length === 0 ? 
                             <div>
                                 <p><b>TU CARRITO ESTÁ VACÍO</b></p>
@@ -34,11 +34,14 @@ function Cart() {
                                 )}
                                 <p className="cart-total">TOTAL:${totalPrice.toFixed(2)}</p>
                                 <div className="cart-checkout">
-                                    <button className="btn">PAGAR</button>
+                                    <Link to="/order-form">
+                                        <button className="btn cart-total">Finalizar compra</button>
+                                    </Link>
                                 </div>
                                 <div className="cart-buttons">
-                                    <Link to="/products"><button className="btn">seguir comprando</button></Link>
                                     <button className="btn" onClick={clear}>Vaciar carrito</button>
+                                    <Link to="/products"><button className="btn">seguir comprando</button></Link>
+                                    
                                 </div>
                             </div>
                         }

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+// SCSS
+import './_Contact.scss';
 
 function Contact() {
-    
     return (
         <div>
             <div>
-                <h2 className="titulo">Contacto</h2>
+                <h2 className="titulo">CONTACTO</h2>
             </div>
             <div className="form-cart">
                 <section id="form">
@@ -27,7 +28,7 @@ function Contact() {
                                 <button type="reset" id="borrar" className="rounded btn-outline-dark">borrar</button>
                             </div>
                             <div>
-                                <button type="reset" id="enviar" className="rounded btn-outline-dark">enviar</button>
+                                <button type="submit" id="enviar" className="rounded btn-outline-dark">enviar</button>
                             </div>
                         </div>
                     </form>
@@ -37,4 +38,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Contact;

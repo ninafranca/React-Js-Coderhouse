@@ -24,25 +24,25 @@
             background-color: black;
             @include filtros;
         }
-        .filtro-beige {
+        .filtro-dorado {
             background-color: rgb(243, 214, 47);
             color: rgb(243, 214, 47);
             @include filtros;
         }
-        .filtro-rosa {
-            background: linear-gradient(90deg, rgba(30,13,218,1) 0%, rgba(78,200,64,1) 20%, rgba(155,83,176,1) 43%, rgba(183,160,43,1) 63%, rgba(223,12,144,1) 79%, rgba(0,255,158,1) 100%);
+        .filtro-surtido {
+            background: linear-gradient(120deg, rgba(30,13,218,1) 0%, rgba(78,200,64,1) 20%, rgba(155,83,176,1) 43%, rgba(183,160,43,1) 63%, rgba(223,12,144,1) 79%, rgba(0,255,158,1) 100%);
             color:#df0c90;
             @include filtros;
         }
-        .filtro-verde {
+        .filtro-cobre {
             background-color: rgb(212, 99, 65);
             color: rgb(212, 99, 65);
             @include filtros;
         }
-        .filtro-rojo {
-            background: linear-gradient(90deg, rgba(13,176,218,1) 12%, rgba(183,43,158,1) 43%, rgba(223,12,144,1) 66%, rgba(0,255,158,1) 100%);
+        .filtro-holo {
+            background: linear-gradient(120deg, rgba(13,176,218,1) 12%, rgba(183,43,158,1) 53%, rgba(223,12,144,1) 66%);
             color:#df0c90;
-            @include filtros
+            @include filtros;
         }
     }
     .productos {

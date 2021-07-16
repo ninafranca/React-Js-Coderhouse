@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
-    .form-cart {
+    .contact-form {
         border-radius: 0.5%;
         align-items: center;
         margin: 2rem;
@@ -59,6 +59,7 @@
         }
         .section-contacto__form--borrar-enviar {
             display: flex;
+            justify-content: center;
             div {
                 margin: 0rem 2rem;
             }
@@ -70,6 +71,7 @@
         #borrar {
             &:hover {
                 background-color: red;
+                border-color: red;
             }
         }
     }
