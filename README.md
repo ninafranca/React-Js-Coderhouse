@@ -1,6 +1,6 @@
 # NANETTE SHOP
 
-_Proyecto del curso de React Js de Coderhouse_
+_E-commerce creado para el proyecto del curso de React Js de Coderhouse_
 
 ## Autora ✒️
 
@@ -41,7 +41,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-##Project screenshot
+## Project screenshot
 
 ![image](https://res.cloudinary.com/nanette/image/upload/v1627750935/samples/ecommerce/project-screenshot_zsrbtu.png)
 
