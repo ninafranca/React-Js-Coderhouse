@@ -1,22 +1,24 @@
 .item-detail {
-    width: 50vw;
+    box-shadow: 0 0 10px rgb(128, 128, 128);
+    width: 45vw;
+    margin: 2% 0% 4% 0%;
     img {
         padding: 2% 0%;
-        width: 25%;
+        width: 45%;
     }
     .prop-p {
         text-align: center;
         padding: 0% 2%;
-        font-size: 120%;
+        font-size: 140%;
         font-weight: 600;
     }
     .prop-p-description {
-        font-size: 110%;
-        text-align: start;
-        padding: 0% 2%;
+        font-size: 120%;
+        text-align: center;
+        padding: 1% 2% 3% 2%;
     }
     .prop-p-volver {
-        padding-top: 20%;
+        padding: 30% 0%;
         font-size: 180%;
     }
 }

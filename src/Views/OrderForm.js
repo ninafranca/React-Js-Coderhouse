@@ -11,27 +11,6 @@ import './_Contact.scss';
 import './_OrderForm.scss';
 
 function OrderForm() {
-    /*
-    const {totalPrice, cart} = useContext(CartContext);
-    const [order, setOrder] = useState('');
-    const [name, setName]= useState('');
-    const [phone, setPhone] = useState('');
-    const [email, setEmail] = useState('');
-    const [customer, setCustomer] = useState('');
-    const buyer = {name, phone, email};
-    const orderInfo = [];
-    const date = new Date();
-
-    const addOrder = () => {
-        setCustomer(buyer);
-        orderInfo.push(customer, cart, `Price: $${totalPrice}`, date)
-        const addToDB = async (array) => {
-            const newOrder = await db.collection('orders').add(array);
-            setOrder(newOrder.id);
-        console.log(orderInfo);
-        }
-    }
-    */
 
     const {totalPrice, cart, setCart} = useContext(CartContext);
     const [user, setUser] = useState({});
@@ -69,7 +48,6 @@ function OrderForm() {
           total: totalPrice
         };
         newOrder(order);
-        console.log("Hola")
         setCart([])
     };
 
@@ -113,9 +91,9 @@ function OrderForm() {
                                 </div>
                             </div>
                         </form> ) : (
-                            <form className="contact-form">
+                            <form className="contact-form form-order">
                                 <p>¡Orden realizada con éxito!</p>
-                                <p>Su número de compra es {order}</p>
+                                <p>Su ID de compra es <span>{order}</span></p>
                             </form>
                         )
                     }

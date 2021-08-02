@@ -10,12 +10,7 @@ import './_ItemDetails.scss';
 
 function ItemDetail({prop}) {
     const [quantity, setQuantity] = useState(0);
-    const {addItem} = useContext(CartContext);
-    
-    const onAdd = (e) => {
-        setQuantity(e);
-        addItem(prop, e);
-    }
+    const {onAdd} = useContext(CartContext);
 
     return (
         <div>
@@ -31,7 +26,7 @@ function ItemDetail({prop}) {
                     </div>      
                     
                 }
-                <Link to="/products"><p className="prop-p-volver">volver</p></Link>
+                <Link to="/"><p className="prop-p-volver">volver</p></Link>
             </div>
         </div>
     )

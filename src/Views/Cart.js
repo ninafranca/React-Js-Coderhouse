@@ -12,7 +12,7 @@ function Cart() {
     return (
         <div>
             <div>
-                <h2 className="titulo">Carrito de compras</h2>
+                <h2 className="titulo">CARRITO DE COMPRAS</h2>
             </div>
             <div>
                 <section id="form">
@@ -20,7 +20,7 @@ function Cart() {
                         { cart.length === 0 ? 
                             <div>
                                 <p><b>TU CARRITO ESTÁ VACÍO</b></p>
-                                <Link to="/products"><button className="btn">Ir a productos</button></Link>
+                                <Link to="/"><button className="btn">Ir a productos</button></Link>
                             </div>
                             :
                             <div className="cart-div">
@@ -40,7 +40,7 @@ function Cart() {
                                 </div>
                                 <div className="cart-buttons">
                                     <button className="btn" onClick={clear}>Vaciar carrito</button>
-                                    <Link to="/products"><button className="btn">seguir comprando</button></Link>
+                                    <Link to="/"><button className="btn">seguir comprando</button></Link>
                                     
                                 </div>
                             </div>

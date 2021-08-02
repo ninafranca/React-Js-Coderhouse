@@ -15,3 +15,20 @@
         @extend .order-total;
     }
 }
+
+form {
+    min-height: 90vh;
+    }
+    
+    .form-order {
+        p {
+            font-size: 150%;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        span {
+            color: rgb(240, 113, 191);
+        }
+    }

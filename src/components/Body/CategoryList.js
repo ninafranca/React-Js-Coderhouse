@@ -30,7 +30,7 @@ function Categories({match}) {
     return (
         <div className="category-list">
             <h2>{itemCategory.toUpperCase()}</h2>
-            <div className="card category">
+            <div className="category">
                 {category.map(p=> 
                     <Item className="category-item" image={p.image} title={p.title} id={p.id} price={p.price} />)}
             </div>

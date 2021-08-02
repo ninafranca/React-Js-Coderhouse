@@ -14,15 +14,15 @@ function CartWidget () {
     return (
         <div>
             { cart.length === 0 ? 
-            <div></div>
-            :
-            <Link to='/cart'>
-                <div className="cart-img">
-                    <img src={Bag} alt="Cart Logo"></img>
-                    <p>{totalQuantity}</p>
-                </div>
-            </Link>
-        }
+                <div></div>
+                :
+                <Link to='/cart'>
+                    <div className="cart-img">
+                        <img src={Bag} alt="Cart Logo"></img>
+                        <p>{totalQuantity}</p>
+                    </div>
+                </Link>
+            }
         </div>
     )
 }

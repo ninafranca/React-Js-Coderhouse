@@ -12,7 +12,7 @@ function Products() {
                 <aside id="aside">
                     <h3>Filtros</h3>
                     <div className="form-check">
-                        <Link to="/products">
+                        <Link to="/">
                             <input className="form-check-input" type="radio" name="flexRadioDefault" id="todos"></input>
                         </Link>
                         <label className="form-check-label" for="flexRadioDefault1">Todos</label>
