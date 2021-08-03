@@ -45,3 +45,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ![image](https://res.cloudinary.com/nanette/image/upload/v1627955839/straws/screen_uozvwu.png)
 
+## Project gif
+
+![](https://res.cloudinary.com/nanette/image/upload/v1628006261/straws/final_iuviga.gif)
+
