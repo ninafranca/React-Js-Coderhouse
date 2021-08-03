@@ -1,6 +1,6 @@
 import React from 'react';
 // REACT ROUTER DOM
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 // SCSS
 import './_Item.scss';
 

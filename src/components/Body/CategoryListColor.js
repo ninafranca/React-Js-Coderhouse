@@ -36,7 +36,7 @@ function CategoriesColor({ match }) {
                 <Aside />
                 <div className="category productos">
                     { category.map( (p) => 
-                    <Item className="category-item" key={p.id} image={p.image} title={p.title} id={p.id} price={p.price} />)
+                        <Item className="category-item" key={p.id} image={p.image} title={p.title} id={p.id} price={p.price} />)
                     }
                 </div>
             </div>

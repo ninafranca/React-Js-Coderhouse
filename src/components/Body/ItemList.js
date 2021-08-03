@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 // FIREBASE
-import {db} from '../../Firebase';
+import { db } from '../../Firebase';
 // JS
 import Item from './Item';
 // SCSS
@@ -25,18 +25,18 @@ function ItemList() {
 
     return (
         <div className="item-list">
-        {products.map(p => 
-            <div className="card" style={{ margin: 10}} key={p.id}>
-                <Item 
-                    key={p.id}
-                    image={p.image} 
-                    title={p.title}
-                    id={p.id}
-                    price={p.price}
-                />
-            </div>
-        )}
-    </div>
+            {products.map(p => 
+                <div className="card" style={{ margin: 10}} key={p.id}>
+                    <Item 
+                        key={p.id}
+                        image={p.image} 
+                        title={p.title}
+                        id={p.id}
+                        price={p.price}
+                    />
+                </div>
+            )}
+        </div>
     )}
 
 export default ItemList;

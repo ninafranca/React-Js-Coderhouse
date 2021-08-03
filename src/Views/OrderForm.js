@@ -1,9 +1,9 @@
 // TIME STAMP
-import React, {useContext, useState} from 'react';
+import React, { useContext, useState } from 'react';
 // CONTEXT
-import {CartContext} from '../components/Context/CartContext';
+import { CartContext } from '../components/Context/CartContext';
 // FIREBASE
-import {db} from '../../src/Firebase.js';
+import { db } from '../../src/Firebase.js';
 // DATE
 import SimpleDateTime  from 'react-simple-timestamp-to-date';
 // SCSS
@@ -11,7 +11,6 @@ import './_Contact.scss';
 import './_OrderForm.scss';
 
 function OrderForm() {
-
     const {totalPrice, cart, setCart} = useContext(CartContext);
     const [user, setUser] = useState({});
     const [order, setOrder] = useState('');
@@ -42,10 +41,10 @@ function OrderForm() {
     const orderSubmit = (e) => {
         e.preventDefault();
         let order = {
-          buyer: user,
-          items: cart,
-          date: new Date(),
-          total: totalPrice
+            buyer: user,
+            items: cart,
+            date: new Date(),
+            total: totalPrice
         };
         newOrder(order);
         setCart([])
@@ -90,14 +89,14 @@ function OrderForm() {
                                     <button type="submit" id="enviar" className="rounded btn-outline-dark" onClick={(e)=>orderSubmit(e)}>enviar</button>
                                 </div>
                             </div>
-                        </form> ) : (
+                        </form> 
+                        ) : (
                             <form className="contact-form form-order">
                                 <p>¡Orden realizada con éxito!</p>
                                 <p>Su ID de compra es <span>{order}</span></p>
                             </form>
                         )
                     }
-                    
                 </section>
             </div>
         </div>

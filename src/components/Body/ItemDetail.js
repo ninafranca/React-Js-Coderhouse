@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 // REACT ROUTER DOM
 import { Link } from 'react-router-dom';
 // CONTEXT
-import {CartContext} from '../Context/CartContext';
+import { CartContext } from '../Context/CartContext';
 // JS
 import ItemCount from './ItemCount';
 // SCSS

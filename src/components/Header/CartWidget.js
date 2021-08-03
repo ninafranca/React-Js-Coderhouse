@@ -1,8 +1,8 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 // REACT ROUTER DOM
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // CONTEXT
-import {CartContext} from '../Context/CartContext';
+import { CartContext } from '../Context/CartContext';
 // IMG
 import Bag from './bag.png';
 // SCSS

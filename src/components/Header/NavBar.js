@@ -1,7 +1,10 @@
 import CartWidget from './CartWidget';
+// REACT ROUTER DOM
+import { Link } from 'react-router-dom';
+// SCSS
 import './_NavBar.scss';
+// IMG
 import Logo from './logo.png';
-import {Link} from 'react-router-dom';
 
 function NavBar () {
         return (

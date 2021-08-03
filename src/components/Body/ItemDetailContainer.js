@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 // FIREBASE
-import {db} from '../../Firebase';
+import { db } from '../../Firebase';
 // JS
 import ItemDetail from '../../Views/ItemDetail';
 // SCSS
