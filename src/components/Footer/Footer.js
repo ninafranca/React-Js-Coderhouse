@@ -7,7 +7,7 @@ function Footer() {
         <footer>
             <p>NANETTE SHOP © All rights reserved 2021</p>
         </footer>
-    )
+    );
 }
 
 export default Footer;

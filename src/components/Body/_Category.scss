@@ -3,13 +3,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    aside {
+        
+        margin-left: -213.5%;
+    }
     .category {
         display: grid;
-        justify-content: center;
         grid-template-columns: repeat(3, auto);
         grid-column-gap: 3rem;
         grid-row-gap: 2rem;
-        margin-bottom: 5%;
     }
     h2 {
         color: gray;

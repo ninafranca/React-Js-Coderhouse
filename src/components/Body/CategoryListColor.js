@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { db } from '../../Firebase';
 // JS
 import Item from './Item';
-import Aside from './Aside';
 // SCSS
 import './_Category.scss';
 import '../../_Mixins.scss';
@@ -33,7 +32,6 @@ function CategoriesColor({ match }) {
         <div className="category-list">
             <h2>{itemColor.toUpperCase()}</h2>
             <div className="aside-category aside-productos">
-                <Aside />
                 <div className="category productos">
                     { category.map( (p) => 
                         <Item className="category-item" key={p.id} image={p.image} title={p.title} id={p.id} price={p.price} />)

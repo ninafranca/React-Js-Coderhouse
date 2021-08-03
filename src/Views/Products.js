@@ -6,11 +6,13 @@ function Products() {
     return (
         <div className="products">
             <h2 className="titulo">PRODUCTOS</h2>
-            <section className="productos">
-                <ItemListContainer />
-            </section>
+            <div className="aside-productos">
+                <section className="productos">
+                    <ItemListContainer />
+                </section>
+            </div>
         </div>
-    )
+    );
 }
 
 export default Products;
