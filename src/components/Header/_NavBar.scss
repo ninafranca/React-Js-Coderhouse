@@ -9,6 +9,24 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        div {
+            display: flex;
+            .dropdown { 
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                .dropdown-menu {
+                    background-color: rgb(240, 238, 238);
+                    a {
+                        font-weight: 600;
+                        font-size: 150%;
+                        color: rgb(0, 0, 0);
+                        margin-left: 10%;
+                    }
+                }
+            }
+        }
     }
     nav>a {
         padding: 0rem 1rem;

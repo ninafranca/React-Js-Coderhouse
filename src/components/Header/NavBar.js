@@ -7,25 +7,19 @@ function NavBar () {
         return (
             <div>
                 <div className="App-header">
-                    <Link to="/"><img src={Logo} alt="Logo Nanette Shoes" className="img-logo"></img></Link>
+                    <Link to="/"><img src={Logo} alt="Logo Nanette Shop" className="img-logo"></img></Link>
                     <nav>
                         <div>
-                        
-                        <div class="dropdown">
-                            <Link to="/" className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Productos</Link>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><Link to="/category/sorbetes">Sorbetes</Link></li>
-                                <li><Link to="/category/vajilla">Vajilla</Link></li>
-                                <li><Link to="/category/accesorios">Accesorios</Link></li>
-                            </ul>
-                        </div>
-
-                        <Link to="/contact">Contacto</Link>
-                        </div>
-                        <div>
-                            <Link to="/category/sorbetes">Sorbetes</Link>
-                            <Link to="/category/vajilla">Vajilla</Link>
-                            <Link to="/category/accesorios">Accesorios</Link>
+                            <div class="dropdown">
+                                <Link to="/" className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Productos</Link>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><Link to="/">Todos</Link></li>
+                                    <li><Link to="/category/sorbetes">Sorbetes</Link></li>
+                                    <li><Link to="/category/vajilla">Vajilla</Link></li>
+                                    <li><Link to="/category/accesorios">Accesorios</Link></li>
+                                </ul>
+                            </div>
+                            <Link to="/contact">Contacto</Link>
                         </div>
                     </nav>
                     <CartWidget />
