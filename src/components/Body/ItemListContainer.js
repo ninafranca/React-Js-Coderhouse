@@ -4,12 +4,12 @@ import ItemList from './ItemList';
 // SCSS
 import './_ItemListContainer.scss';
 
-function ItemListContainer () {
+function ItemListContainer() {
     return (
         <div className="item-list-container">
-           <ItemList />
+            <ItemList />
         </div>
-    )
+    );
 }
 
 export default ItemListContainer;

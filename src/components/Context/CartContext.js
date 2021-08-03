@@ -1,7 +1,9 @@
 import React, { createContext, useState } from 'react';
 
+export const CartContext = createContext();
+
 export const CartProvider = (props) => {
-	const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState([]);
 
     const addItem = (item, quantity) => {
         const isInCart = cart.find((c) => c.item.id === item.id);
@@ -12,22 +14,22 @@ export const CartProvider = (props) => {
         } else {
             setCart([...cart, { item, quantity }]);
         }
-    }
-    
+    };
+
     const removeItem = (id) => {
         setCart(cart.filter((i) => id !== i.item.id));
     };
-        
+
     const clear = () => {
         setCart([]);
-    }
+    };
 
     const totalPrice = cart.reduce(
-        (total, current) => total + current.item.price * current.quantity, 0
+        (total, current) => total + current.item.price * current.quantity, 0,
     );
 
     const totalQuantity = cart.reduce(
-        (total, current) => total + current.quantity, 0
+        (total, current) => total + current.quantity, 0,
     );
 
     return (
@@ -35,6 +37,4 @@ export const CartProvider = (props) => {
             {props.children}
         </CartContext.Provider>
     );
-}
-
-export const CartContext = createContext();
+};

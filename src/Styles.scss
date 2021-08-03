@@ -1,5 +1,4 @@
 // IMPORTS
-@import './Variables.scss';
 @import './Mixins.scss';
 @import './components/Header/NavBar.scss';
 @import './components/Header/CartWidget.scss';
@@ -8,7 +7,7 @@
 @import './components/Body/ItemList.scss';
 @import './components/Body/Item.scss';
 @import './components/Body/Category.scss';
-@import './Views/ItemDetails.scss';
+@import './components/Body/ItemDetails.scss';
 @import './Views/Home.scss';
 @import './Views/Products.scss';
 @import './Views/Contact.scss';
