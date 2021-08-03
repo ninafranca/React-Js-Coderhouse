@@ -1,57 +1,9 @@
-.aside-productos {
-    display: flex;
-    padding-bottom: 3rem;
-    aside {
-        padding-left: 2%;
-        h3 {
-            padding: 0% 0% 7% 15%;
-            font-family: 'Staatliches', cursive;
-            font-size: 1.4rem;
-            text-shadow: rgb(213, 63, 250) 0.1em 0.1em 0.3em;
-        }
-        div {
-            padding-bottom: 0.6rem;
-        }
-        a {
-            text-decoration: none;
-            p {
-                text-align: start;
-                font-weight: 500;
-                &:hover {
-                    color: rgb(255, 255, 255) 0.1em 0.1em 0.3em;
-                }
-            }
-        }
-        .filtro-negro {
-            background-color: black;
-            @include filtros;
-        }
-        .filtro-dorado {
-            background-color: rgb(243, 214, 47);
-            color: rgb(243, 214, 47);
-            @include filtros;
-        }
-        .filtro-surtido {
-            background: linear-gradient(120deg, rgba(30,13,218,1) 0%, rgba(78,200,64,1) 20%, rgba(155,83,176,1) 43%, rgba(183,160,43,1) 63%, rgba(223,12,144,1) 79%, rgba(0,255,158,1) 100%);
-            color:#a18547;
-            @include filtros;
-        }
-        .filtro-cobre {
-            background-color: rgb(212, 99, 65);
-            color: rgb(212, 99, 65);
-            @include filtros;
-        }
-        .filtro-holo {
-            background: linear-gradient(120deg, rgba(13,176,218,1) 12%, rgba(183,43,158,1) 53%, rgba(223,12,144,1) 66%);
-            color:#ca0890;
-            @include filtros;
-        }
-    }
-    .productos {
-        padding: 0% 7%;
-    }
-}
-
 .products {
     position: relative;
+}
+
+.productos {
+    padding: 0% 7%;
+    display: flex;
+    justify-content: center;
 }
