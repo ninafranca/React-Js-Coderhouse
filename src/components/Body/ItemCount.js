@@ -6,13 +6,13 @@ const ItemCount = ({ stock, onAdd }) => {
     const [quantity, setQuantity] = useState(1);
     
     const handlerPlus = () => {
-      if (quantity < stock) {
-        setQuantity(quantity + 1);
-      }
+        if (quantity < stock) {
+            setQuantity(quantity + 1);
+        }
     };
 
-    const handlerMinus = () =>{
-      setQuantity((quantity >= 2) ? quantity - 1 : quantity)
+    const handlerMinus = () => {
+        setQuantity((quantity >= 2) ? quantity - 1 : quantity)
     }
 
     return (
