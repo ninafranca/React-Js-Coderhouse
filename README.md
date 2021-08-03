@@ -43,5 +43,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Project screenshot
 
-![image](https://res.cloudinary.com/nanette/image/upload/v1627750935/samples/ecommerce/project-screenshot_zsrbtu.png)
+![image](https://res.cloudinary.com/nanette/image/upload/v1627955839/straws/screen_uozvwu.png)
 
